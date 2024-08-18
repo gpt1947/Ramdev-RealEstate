@@ -10,7 +10,7 @@ import CreateListing from './pages/CreateListing';
 import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
-
+import Contact from './pages/Contact';
 export default function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />} />
 

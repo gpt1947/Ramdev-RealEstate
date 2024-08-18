@@ -33,7 +33,9 @@ export default function CreateListing() {
   const [loading, setLoading] = useState(false);
   console.log(formData);
   const handleImageSubmit = (e) => {
-    if (files.length > 0 && files.length + formData.imageUrls.length < 7) {
+    console.log('Hiiii')
+    if (1===1) {
+      
       setUploading(true);
       setImageUploadError(false);
       const promises = [];
@@ -43,6 +45,7 @@ export default function CreateListing() {
       }
       Promise.all(promises)
         .then((urls) => {
+          
           setFormData({
             ...formData,
             imageUrls: formData.imageUrls.concat(urls),
@@ -75,11 +78,15 @@ export default function CreateListing() {
         },
         (error) => {
           reject(error);
+          console.log(error);
         },
         () => {
+          console.log('Hii e')
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             resolve(downloadURL);
+          
           });
+          console.log('Hii w')
         }
       );
     });

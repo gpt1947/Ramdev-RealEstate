@@ -2,13 +2,31 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='py-20 px-4 max-w-6xl mx-auto'>
-      <h1 className='text-3xl font-bold mb-4 text-slate-800'>About Sahand Estate</h1>
-      <p className='mb-4 text-slate-700'>Sahand Estate is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.</p>
-      <p className='mb-4 text-slate-700'>
-      Our mission is to help our clients achieve their real estate goals by providing expert advice, personalized service, and a deep understanding of the local market. Whether you are looking to buy, sell, or rent a property, we are here to help you every step of the way.
-      </p>
-      <p className='mb-4 text-slate-700'>Our team of agents has a wealth of experience and knowledge in the real estate industry, and we are committed to providing the highest level of service to our clients. We believe that buying or selling a property should be an exciting and rewarding experience, and we are dedicated to making that a reality for each and every one of our clients.</p>
-    </div>
-  )
+      <div className="py-16 bg-white">
+          <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+              <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                  <div className="md:5/12 lg:w-5/12">
+                      <img
+                          src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                          alt="image"
+                      />
+                  </div>
+                  <div className="md:7/12 lg:w-6/12">
+                      <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+                          React development is carried out by passionate developers
+                      </h2>
+                      <p className="mt-6 text-gray-600">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                          accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
+                          aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                      </p>
+                      <p className="mt-4 text-gray-600">
+                          Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
+                          Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  );
 }
