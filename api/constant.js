@@ -1,1 +1,1 @@
-export const DB_NAME = "Ramdevbackend"
+export const DB_NAME = ""
